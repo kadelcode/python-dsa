@@ -15,6 +15,9 @@ def minmax(data):
     if len(data) == 0:
         raise ValueError("Empty sequence")
 
+    if not isinstance(data, list):
+        raise TypeError("Data must be list")
+
     # Initialize minimum and maximum
     minimum, maximum = data[0], data[0]
 
