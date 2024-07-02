@@ -27,7 +27,8 @@ def minmax(data):
 
     return minimum, maximum
 
-# Example usage
-data = [2, 6, 3, 10, 1]
-min_value, max_value = minmax(data)
-print(f"Minimum: {min_value}, Maximum: {max_value}")
+if __name__ == '__main__':
+    # Example usage
+    data = [2, 6, 3, 10, 1]
+    min_value, max_value = minmax(data)
+    print(f"Minimum: {min_value}, Maximum: {max_value}")
