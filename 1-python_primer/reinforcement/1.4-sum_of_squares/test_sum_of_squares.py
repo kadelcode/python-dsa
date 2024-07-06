@@ -13,5 +13,12 @@ class TestSumOfSquares(unittest.TestCase):
         self.assertEqual(sum_of_squares(0), 0)
         self.assertEqual(sum_of_squares(1), 1)
 
+    def test_larger_values(self):
+        """
+        Tests the function for larger values of n.
+        """
+        self.assertEqual(sum_of_squares(10), 285)
+        self.assertEqual(sum_of_squares(20), 2470)
+
 if __name__ == '__main__':
     unittest.main()
