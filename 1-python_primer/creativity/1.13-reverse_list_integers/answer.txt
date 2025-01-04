@@ -1,0 +1,7 @@
+FUNCTION reverse_list(input_list)
+    CREATE empty list called reverse_list
+    FOR i FROM length(input_list) - 1 TO 0 DO
+        ADD input_list[i] TO reverse_list
+    END FOR
+    RETURN reversed_list
+END FUNCTION
