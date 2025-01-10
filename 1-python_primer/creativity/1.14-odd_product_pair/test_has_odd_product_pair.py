@@ -1,3 +1,5 @@
+from has_odd_product_pair import has_odd_product_pair
+
 test_cases = [
     ([2, 4, 6, 8], False),  # No odd numbers, so no odd product
     ([2, 4, 7, 9], True),   # Two odd numbers (7, 9), their product is odd
