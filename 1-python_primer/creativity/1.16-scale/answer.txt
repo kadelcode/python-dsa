@@ -1,0 +1,1 @@
+This is possible because data is a mutable object (like a list in Python), and the data[j] *= factor operation modifies the content of the mutable object rather than reassigning the entire data variable
