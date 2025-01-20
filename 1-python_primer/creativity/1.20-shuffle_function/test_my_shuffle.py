@@ -10,3 +10,18 @@ def test_my_shuffle():
     my_shuffle(shuffled)
 
     assert sorted(original) == sorted(shuffled), "The shuffled list don't have the same elements as the original"
+
+    
+    # Test 2: Ensure the function changes the order of elements
+    # Note: There's a very small chance the shuffled list could be the same
+    # as the original
+    no_change_count = 0
+
+    # Run multiple trials to reduce the impact of randomness
+    for _ in range(100):
+        shuffled = original[:]
+        my_shuffle(shuffled)
+
+        if original == shuffled:
+            no_change_count += 1
+    assert no_change_count < 5, "The shuffle function rarely changes the order of elements"
