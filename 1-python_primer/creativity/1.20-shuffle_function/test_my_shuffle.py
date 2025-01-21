@@ -25,3 +25,9 @@ def test_my_shuffle():
         if original == shuffled:
             no_change_count += 1
     assert no_change_count < 5, "The shuffle function rarely changes the order of elements"
+
+
+    # Test 3: Handle edge cases
+    empty_list = []
+    my_shuffle(empty_list) # Should not raise an error
+    assert empty_list == [], "The shuffle function failed on an empty list."
