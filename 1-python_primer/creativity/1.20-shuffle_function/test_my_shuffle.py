@@ -31,3 +31,7 @@ def test_my_shuffle():
     empty_list = []
     my_shuffle(empty_list) # Should not raise an error
     assert empty_list == [], "The shuffle function failed on an empty list."
+
+    single_element_list = [42]
+    my_shuffle(single_element_list) # Should not raise an error
+    assert single_element_list == [42], "The shuffle function failed on a single-element list"
