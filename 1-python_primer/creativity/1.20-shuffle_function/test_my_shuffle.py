@@ -46,3 +46,8 @@ def test_my_shuffle():
     assert shuffled1 != shuffled2 or len(set(tuple(my_shuffle(original[:])) for _ in range(10))) > 1, (
         "Repeated shuffles produced the same"
         )
+
+    print("All tests passed!")
+
+# Run the test function
+test_my_shuffle()
