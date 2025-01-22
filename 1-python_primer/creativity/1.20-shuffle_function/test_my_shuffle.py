@@ -35,3 +35,14 @@ def test_my_shuffle():
     single_element_list = [42]
     my_shuffle(single_element_list) # Should not raise an error
     assert single_element_list == [42], "The shuffle function failed on a single-element list"
+
+
+    # Test 4: Repeated calls produce different results
+    shuffled1 = original[:]
+    shuffled2 = original[:]
+    my_shuffle(shuffled1)
+    my_shuffle(shuffled2)
+
+    assert shuffled1 != shuffled2 or len(set(tuple(my_shuffle(original[:])) for _ in range(10))) > 1, (
+        "Repeated shuffles produced the same"
+        )
