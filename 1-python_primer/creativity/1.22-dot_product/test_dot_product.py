@@ -14,4 +14,10 @@ b = [4, -5, 6]
 expected = [-4, 10, -18]
 assert dot_product(a, b) == expected, f"Test Case 2 Failed: {dot_product(a, b)} != {expected}"
 
+# Test Case 3: Arrays with zeros
+a = [0, 0, 0]
+b = [4, -5, 6]
+expected = [0, 0, 0]
+assert dot_product(a, b) == expected, f"Test Case 3 Failed: {dot_product(a, b)} != {expected}"
+
 print("All tests passed!")
