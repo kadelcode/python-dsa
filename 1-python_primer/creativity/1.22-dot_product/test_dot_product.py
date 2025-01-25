@@ -38,4 +38,15 @@ b = [6]
 expected = [30]
 assert dot_product(a, b) == expected, f"Test Case 6 Failed: {dot_product(a, b)} != {expected}"
 
+# Test Case 7: Arrays of unequal lengths (should raise an error)
+try:
+    a = [1, 2, 3]
+    b = [4, 6]
+
+    dot_product(a, b)
+    assert False, "Test Case 7 Failed: Expected ValueError for unequal array lengths."
+
+except ValueError as e:
+    assert str(e) == "Arrays a and b must have the same length", f"Test Case 7 Failed: {str(e)}"
+
 print("All tests passed!")
