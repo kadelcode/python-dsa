@@ -32,4 +32,10 @@ b = [1, 2, 3]
 expected = [100, 400, 900]
 assert dot_product(a, b) == expected, f"Test Case 5 Failed: {dot_product(a, b)} != {expected}"
 
+# Test Case 6: Arrays with single element
+a = [5]
+b = [6]
+expected = [30]
+assert dot_product(a, b) == expected, f"Test Case 6 Failed: {dot_product(a, b)} != {expected}"
+
 print("All tests passed!")
