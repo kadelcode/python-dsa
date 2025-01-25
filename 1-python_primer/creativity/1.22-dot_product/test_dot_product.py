@@ -26,4 +26,10 @@ b = []
 expected = []
 assert dot_product(a, b) == expected, f"Test Case 4 Failed: {dot_product(a, b)} != {expected}"
 
+# Test Case 5: Large arrays
+a = [100, 200, 300]
+b = [1, 2, 3]
+expected = [100, 400, 900]
+assert dot_product(a, b) == expected, f"Test Case 5 Failed: {dot_product(a, b)} != {expected}"
+
 print("All tests passed!")
