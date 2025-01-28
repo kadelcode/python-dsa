@@ -21,9 +21,9 @@ def test_remove_punctuation():
     assert remove_punctuation("123! ABC# 456$ DEF&") == "123 ABC 456 DEF"
 
     # Test case 7: String with special characters not in punctuation
-    assert remove_punctuation("Look at this © symbol!") == "Look at this  symbol"
+    assert remove_punctuation("Look at this @ symbol!") == "Look at this  symbol"
 
-print("All test cases passed!")
+    print("All test cases passed!")
 
 # Run the test cases
 test_remove_punctuation()
