@@ -22,3 +22,8 @@ def test_remove_punctuation():
 
     # Test case 7: String with special characters not in punctuation
     assert remove_punctuation("Look at this © symbol!") == "Look at this  symbol"
+
+print("All test cases passed!")
+
+# Run the test cases
+test_remove_punctuation()
